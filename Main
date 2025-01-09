@@ -1,0 +1,15 @@
+// quotes.js
+const quotes = [
+    "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+    "The way to get started is to quit talking and begin doing. - Walt Disney",
+    "Life is what happens when you're busy making other plans. - John Lennon",
+    "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt"
+];
+
+function getRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+}
+
+console.log("Random Quote Generator");
+console.log(getRandomQuote());
